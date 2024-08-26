@@ -1,0 +1,102 @@
+body
+{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("background.jpg");
+    background-size: cover;
+    filter: alpha(opacity=40);
+}
+
+body::before
+{
+    opacity: 0.5;
+}
+
+#container
+{
+    background-color: #eff1f3;
+    border-radius: 10%;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    height: 33vh;
+    width: 90vw;
+    min-height: 350px;
+    max-width: 300px;
+    padding: 2%;
+    margin: 1%;
+}
+
+h1
+{
+    height: 20%;
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70%;
+    justify-content: space-evenly;
+}
+
+.heading,.inputdiv
+{
+    display: flex;
+    align-items:center;
+    width: 100%;
+    justify-content:space-between;
+}
+.icon
+{
+    width: 30%;
+}
+
+#currency
+{
+    width: 70%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.dropdownContainer
+{
+    display: flex;
+    align-items: center;
+    border: 1px solid gray;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.dropdowns
+{
+    border: none;
+    background-color: #eff1f3;
+    outline: none;
+    height: 1rem;
+}
+
+.dropdownContainer img
+{
+    height: 2rem;
+}
+
+button
+{
+    background-color: #24A0ed;
+    color: white;
+    border:none;
+    border-radius: 20px;
+    width: 60%;
+    height: 2rem;
+}
+
+button:hover
+{
+    cursor: pointer;
+}

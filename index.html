@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Currency Converter</h1>
+        <form>
+            <div class="heading" id="fromdiv">
+                <label>From</label>
+                <div class="dropdownContainer">
+                    <img alt="image" src="https://flagsapi.com/AE/flat/64.png"></img>
+                    <select name="from" class="dropdowns" id="from"></select>
+                </div>
+            </div>
+            <div class="inputdiv">
+                <div class="icon">
+                    <i class="fa-solid fa-arrow-right-arrow-left fa-rotate-270"></i>
+                </div>
+                <input type="text" id="currency" placeholder="Enter Amount">
+            </div>
+            <div class="heading" id="todiv">
+                <label>To</label>
+                <div class="dropdownContainer">
+                    <img alt="image" src="https://flagsapi.com/AE/flat/64.png"></img>
+                    <select name="to" class="dropdowns" id="to"></select>
+                </div>
+            </div>
+            <p id="result">0 INR = 0 INR</p>
+            <button type="submit">Get Exchange Rate</button>
+        </form>
+    </div>
+    <script src="codes.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
